@@ -2,24 +2,18 @@ package main
 
 import "fmt"
 
-// - Começando com a seguinte slice:
-//     - x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
-// - Anexe a ela o valor 52;
-// - Anexe a ela os valores 53, 54 e 55 utilizando uma única declaração;
-// - Demonstre a slice;
-// - Anexe a ela a seguinte slice:
-//     - y := []int{56, 57, 58, 59, 60}
-// - Demonstre a slice x.
+// - Utilizando como base o exercício anterior, utilize slicing para demonstrar os valores:
+// - Do primeiro ao terceiro item do slice (incluindo o terceiro item!)
+// - Do quinto ao último item do slice (incluindo o último item!)
+// - Do segundo ao sétimo item do slice (incluindo o sétimo item!)
+// - Do terceiro ao penúltimo item do slice (incluindo o penúltimo item!)
+// - Desafio: obtenha o mesmo resultado acima utilizando a função len() para determinar o penúltimo item
 
 func main() {
-	x := []int{42, 43, 44, 45, 46, 47, 48, 49, 50, 51}
+	lista := []int{15, 62, 75, 84, 93, 100, 231, 31, 432, 320, 42}
 
-	x = append(x, 52)
-	x = append(x, 53, 54, 55)
-
-	y := []int{56, 57, 58, 59, 60}
-
-	x = append(x, y...)
-
-	fmt.Printf("%v", x[:])
+	fmt.Printf("%v", lista[:3])
+	fmt.Printf("%v", lista[4:])
+	fmt.Printf("%v", lista[1:7])
+	fmt.Printf("%v", lista[2:len(lista)-1])
 }

@@ -14,4 +14,5 @@
 #### Fazendo esses exercicios você praticará: Manipulação de Tipos primitivos, Loop, Vetores, arquivos, etc.
 
 
-[Referência](https://github.com/Diziano/Exercicios-Go-Language)
+[Referência 00X](https://github.com/Diziano/Exercicios-Go-Language)
+[Referência 0XX](https://www.youtube.com/@AprendaGo)
